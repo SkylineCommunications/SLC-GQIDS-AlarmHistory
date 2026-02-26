@@ -135,6 +135,7 @@ namespace GQIDSAlarmHistory
 			var filter = CreateFilter();
 
 			var query = filter.Limit(1_000_000)
+				.WithExecutionOptions(options => options.WithTargetHop(QueryTargetHopOptions.All))
 				.OrderByDescending(AlarmExposers.TimeOfArrival);
 
 			_query = _repository.CreateReadQuery(query)
