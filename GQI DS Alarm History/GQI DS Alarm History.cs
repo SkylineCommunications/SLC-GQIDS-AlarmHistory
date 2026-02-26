@@ -57,6 +57,8 @@ namespace GQIDSAlarmHistory
 	using Skyline.DataMiner.Net;
 	using Skyline.DataMiner.Net.Messages.SLDataGateway;
 	using SLDataGateway.API.Querying;
+	using SLDataGateway.API.Querying.ExecutionOptions;
+	using SLDataGateway.API.Querying.ExecutionOptions.TargetHopOptions;
 	using SLDataGateway.API.Repositories.CustomDataTableConfiguration;
 	using SLDataGateway.API.Repositories.Extensions;
 	using SLDataGateway.API.Repositories.Registry;
